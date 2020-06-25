@@ -11,18 +11,18 @@ for repeat in range(10000): #repeats the 100 flips 10000 times
             streak_count1 += 1 # keeps track whether tails consecutively appeared
         else:
             if number == 0: # checks if flip result is not tails
-                streak_count1 = 0 # tails tracker is reset if flip result is not tails
+                streak_count1 = 0 # TAILS tracker is reset if flip result is not tails
         if streak_count1 == 6: # checks if tails appeared 6 times
-            number_of_streaks += 1 # adds a point to streak tracker if tails appeared 6 times
-            streak_count1 = 0 # resets tails tracker after adding a point to the streak tracker
+            number_of_streaks += 1 # adds a point to STREAK tracker if tails appeared 6 times
+            streak_count1 = 0 # resets TAILS tracker after adding a point to the STREAK tracker
 
         if number == 0: # checks if flip result is heads
             streak_count0 += 1 # keeps track whether heads consecutively appeared
         else:
             if number == 1: # checks if flip result is not heads
-                streak_count0 = 0 # heads tracker is reset if flip result is not heads
+                streak_count0 = 0 # HEADS tracker is reset if flip result is not heads
         if streak_count0 == 6: # checks if heads appeared 6 times
-            number_of_streaks += 1 # adds a point to streak tracker if heads appeared 6 times
-            streak_count0 = 0 # resets heads tracker after adding a point to the streak tracker
+            number_of_streaks += 1 # adds a point to STREAK tracker if heads appeared 6 times
+            streak_count0 = 0 # resets HEADS tracker after adding a point to the STREAK tracker
 
 print(number_of_streaks/1000000 * 100) # checks the probability of heads or tails appearing 6 times consecutively
