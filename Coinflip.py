@@ -1,5 +1,5 @@
 import random
-# 0 represents heads, 1, represents tails
+# 0 represents heads, 1 represents tails
 number_of_streaks = 0 # tracks how many times heads or tails appeared 6 times consecutively
 streak_count1 = 0 # tracks the appearance of tails
 streak_count0 = 0 # tracks the appearance of heads
